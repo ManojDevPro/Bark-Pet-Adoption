@@ -1,0 +1,124 @@
+/*---------nav bar---------*/
+
+  
+
+  /* abut us */
+
+  body{
+    background-color: white;
+  }
+  .about-item p{
+    justify-content: space-evenly;
+    text-align: justify;
+    font-size: 17px;
+    font-family: Bona Nova SC, serif;
+  }
+  
+  .about-us {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .about-us h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+   font-family:  "Alegreya Sans SC", sans-serif ;
+  }
+
+  h2{
+    font-family:  "Alegreya Sans SC", sans-serif ;
+  }
+  
+  .about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .about-item {
+    background: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+  }
+  
+  .about-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    background-color: #00b7ff91;
+  }
+  
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+  }
+  
+  h1{
+    margin-top: -2%;
+  }
+  .team-member {
+    text-align: center;
+  }
+  
+  .team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  footer {
+    background: rgb(114, 90, 167);
+    color: #fff;
+    text-align: center;
+    padding: 3px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .work {
+    text-align: justify;
+  }
+
+  h2{
+    text-align: start;
+  }
+
+  .chat{
+        background: rgba(255, 255, 255, 0.6);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px);
+        transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+  }
+
+  .down{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .adopt{
+    width: 400px;
+    height: 300px;
+    margin-top: -3%;
+    margin-bottom: 1%;
+    border-radius: 9px;
+  }
+
+  .we{
+    margin-left: 10%;
+  }
+
+  @media (max-width: 900px) {
+    .down{
+      flex-direction: column;
+    }
+}
+
+  
+  

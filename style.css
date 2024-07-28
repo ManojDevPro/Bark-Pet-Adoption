@@ -1,0 +1,144 @@
+
+/*---------nav bar---------*/
+
+body {
+  margin: 0;
+  font-family:Arial, Helvetica, sans-serif;
+  /* background: url('back1.webp') repeat;
+  background-size: cover ; */
+}
+.navbar {
+
+  position: sticky;
+  top: 0;
+  border-radius: 10px;
+  background-color: #000000;
+  padding: 10px 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.logo{
+    width: 100px;
+    height: 40px;
+}
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+}
+.center-links {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+.center-links a {
+  color: white;
+  text-decoration: none;
+  padding: 0 15px;
+  transition: transform 0.3s, color 0.3s;
+}
+.center-links a:hover {
+  color: #b9c927;
+  transform: scale(1.1);
+}
+.right-link a {
+  color: white;
+  text-decoration: none;
+  padding: 0 15px;
+  transition: transform 0.3s, color 0.3s;
+}
+.right-link a:hover {
+  color: black;
+  transform: scale(1.1);
+}
+a{
+    font-size: 20px;
+    font-family: "Alegreya Sans SC", sans-serif ;
+}
+
+.right-link{
+        background:rgba(2, 221, 255, 0.799);
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+
+
+/**--responsive---*/
+
+@media (max-width: 550px) {
+  .nav-container {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: #dd0000;
+      color: white;
+      
+  }
+
+  .center-links {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+  }
+
+  .center-links li {
+      margin: 1rem 0;
+  }
+
+  .nav-container.active {
+      display: flex;
+  }
+
+}
+
+
+/****------ main------------*/
+
+/* .main{
+    display: flex;
+} */
+/* .main-image{
+    margin-top: 2.5%;
+    width: auto;
+    height: 500px;
+    margin-left: 3%;
+    border-radius: 8px;
+} */
+
+
+
+
+
+/***----about---*/
+
+.about{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.about img{
+    width: 550px;
+    height: 300px;
+    border-radius: 8px;
+}
+
+footer {
+    background: rgb(114, 90, 167);
+    color: white;
+    text-align: center;
+    padding: 3px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  

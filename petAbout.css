@@ -1,0 +1,71 @@
+body {
+  font-family: "Kanit", sans-serif;
+  margin: 20px;
+  background-color: #eaebdda3;
+  text-align: center;
+}
+
+
+/*------*/
+
+.head h3{
+  color: #666;
+}
+
+.pet-details-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.pet-detail {
+  font-family: "Kanit", sans-serif;
+  font-size: 18px;
+  color: #666;
+  margin: 10px 20px;
+}
+
+.pet-photo {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  margin: 20px auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.pet-photo:hover {
+  transform: scale(1.05);
+}
+
+.pet-description {
+  font-size: 18px;
+  font-weight: 300;
+  color: #555;
+  margin: 20px;
+  text-align: justify;
+  align-items: center;
+}
+
+.adopt-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: "Kanit", sans-serif; 
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  margin-top: 20px;
+}
+
+.adopt-button a{
+  text-decoration: none;
+  color: white;
+  font-family: "Kanit", sans-serif; 
+}
+
+.adopt-button:hover {
+  background-color: #45a049;
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Adoption Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="muthu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Adopt Muthupandi</h1>
+<br>
+        <p>If you are interested in adopting Muthupandi, please fill the form below or use one of the methods
+             listed on our contact page. We will respond at the earliest.</p>
+             <br>
+             <form action="https://api.web3forms.com/submit" method="POST">
+            <fieldset>
+                <input type="hidden" name="access_key" value="8b02d02d-e777-4d5b-915f-b61cf79cee1b">
+                <legend>Personal Information</legend>
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+                
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Household Information</legend>
+                <label for="residenceType">Type of Residence:</label>
+                <select id="residenceType" name="residenceType" required>
+                    <option value="house">House</option>
+                    <option value="apartment">Apartment</option>
+                    <option value="other">Other</option>
+                </select>
+                
+                <label for="rentOwn">Do you rent or own your residence?</label>
+                <select id="rentOwn" name="rentOwn" required>
+                    <option value="rent">Rent</option>
+                    <option value="own">Own</option>
+                </select>
+                
+                <div id="landlordPermissionDiv" style="display: none;">
+                    <label for="landlordPermission">If renting, do you have permission from your landlord to have pets?</label>
+                    <select id="landlordPermission" name="landlordPermission">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+                
+                <label for="adults">Number of adults in the household:</label>
+                <input type="number" id="adults" name="adults" required>
+                
+                <label for="children">Number of children in the household:</label>
+                <input type="number" id="children" name="children" required>
+                
+                <label for="childrenAges">Ages of children:</label>
+                <input type="text" id="childrenAges" name="childrenAges">
+            </fieldset>
+            
+            <fieldset>
+                <legend>Pet Information</legend>
+                
+                <label for="otherPets">Do you have other pets?</label>
+                <select id="otherPets" name="otherPets" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+                
+                <div id="otherPetsDetailsDiv" style="display: none;">
+                    <label for="otherPetsDetails">If yes, please provide details (type, age, and any special considerations):</label>
+                    <textarea id="otherPetsDetails" name="otherPetsDetails"></textarea>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Experience and Lifestyle</legend>
+                <label for="ownedPetsBefore">Have you owned pets before?</label>
+                <select id="ownedPetsBefore" name="ownedPetsBefore" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+                
+                <label for="experienceWithPetType">Do you have experience with the type of pet you are adopting?</label>
+                <select id="experienceWithPetType" name="experienceWithPetType" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+                
+                <label for="hoursAlone">How many hours a day will the pet be alone?</label>
+                <input type="number" id="hoursAlone" name="hoursAlone" required>
+                
+                <label for="petStayAlone">Where will the pet stay when alone?</label>
+                <input type="text" id="petStayAlone" name="petStayAlone" required>
+                
+                <label for="responsibleForCare">Who will be responsible for the pet’s care?</label>
+                <input type="text" id="responsibleForCare" name="responsibleForCare" required>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Veterinary Information</legend>
+                <label for="haveVet">Do you have a veterinarian?</label>
+                <select id="haveVet" name="haveVet" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+                
+                <div id="vetDetailsDiv" style="display: none;">
+                    <label for="vetDetails">If yes, please provide the veterinarian's name and contact information:</label>
+                    <textarea id="vetDetails" name="vetDetails"></textarea>
+                </div>
+                
+                <label for="financiallyPrepared">Are you financially prepared for routine veterinary care?</label>
+                <select id="financiallyPrepared" name="financiallyPrepared" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Agreement and Signature</legend>
+                <label for="agreeProperCare">I agree to provide the adopted pet with proper care, food, shelter, and medical attention.</label>
+                <select id="agreeProperCare" name="agreeProperCare" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+                
+                <label for="agreeReturn">I agree to return the pet to the adoption agency if I can no longer care for it.</label>
+                <select id="agreeReturn" name="agreeReturn" required>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+                
+                <label for="signature">Signature:</label>
+                <input type="text" id="signature" name="signature" required>
+                
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+            </fieldset>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

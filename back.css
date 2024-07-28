@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+}
+
+.bgimage{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(./image/stray.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: bgchange 17s linear infinite;
+}
+
+@keyframes bgchange{
+    0%{
+        background-image: url(./image/stray.webp);
+    }
+    20%{
+        background-image: url(./image/stray.webp);
+    }
+    25%{
+        background-image: url(./image/stray2.webp);
+    }
+    45%{
+        background-image: url(./image/stray2.webp);
+    }
+    50%{
+        background-image: url(./image/stray3.avif);
+    }
+    70%{
+        background-image: url(./image/stray3.avif);
+    }
+    75%{
+        background-image: url(./image/stray4.webp);
+    }
+    95%{
+        background-image: url(./image/stray4.webp);
+    }
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.content{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.content h1{
+    font-size: 60px;
+    margin-bottom: 0px;
+    font-family: "Abril Fatface", serif;
+}
+
+.content h1 span{
+    color: aqua;
+}
+
+.content h2{
+    font-family: "Abril Fatface", serif;
+    font-size: 37px;
+    color: rgb(251, 234, 6);
+    width: 60%;
+    padding-bottom: 10px;
+    text-align: center;
+}
